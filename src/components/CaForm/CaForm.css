@@ -1,0 +1,69 @@
+.ca_form_container {
+  display: flex;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.ca_form_card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #6f7271;
+  height: 95vh;
+  width: 40%;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.ca_logo {
+  width: 40%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.ca_form_body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: left;
+  width: 80%;
+}
+
+.ca_tag_form {
+  padding-top: 2rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.ca_input_form {
+  padding-top: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #ffffff; /* Color de la línea de abajo */
+  font-size: 1rem;
+  color: #ffffff;
+  transition: border-bottom 1s ease;
+  margin-bottom: 2rem;
+}
+
+.ca_input_form:focus {
+    border-bottom: 1px solid #be5e1e
+}
+
+.ca_input_form::placeholder {
+    color: #ffffff5b;
+}
+
+.ca_form_button{
+    margin-top: 1rem;
+    height: 60px;
+    width: 60%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-weight: 600;
+    font-size: 30px;
+}
