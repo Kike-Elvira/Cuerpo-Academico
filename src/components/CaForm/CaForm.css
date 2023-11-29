@@ -4,17 +4,25 @@
   font-family: "Montserrat", sans-serif;
   justify-content: center;
   align-items: center;
+  background-image: url("../../assets/img/Fondo\ ITV.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .ca_form_card {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #6f7271;
+  background-color: transparent;
   height: 95vh;
   width: 40%;
   border-radius: 30px;
   align-items: center;
+  position: relative;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(100px);
 }
 
 .ca_logo {
@@ -43,7 +51,7 @@
   border: none;
   outline: none;
   background: transparent;
-  border-bottom: 1px solid #ffffff; /* Color de la línea de abajo */
+  border-bottom: 1px solid #ffffff; 
   font-size: 1rem;
   color: #ffffff;
   transition: border-bottom 1s ease;
@@ -51,19 +59,125 @@
 }
 
 .ca_input_form:focus {
-    border-bottom: 1px solid #be5e1e
+  border-bottom: 1px solid #be5e1e;
 }
 
 .ca_input_form::placeholder {
-    color: #ffffff5b;
+  color: #ffffff5b;
 }
 
-.ca_form_button{
-    margin-top: 1rem;
-    height: 60px;
-    width: 60%;
-    border-radius: 20px;
-    background-color: #ffffff;
-    font-weight: 600;
-    font-size: 30px;
+.ca_form_.ca_form_button {
+  margin-top: 1rem;
+  height: 60px;
+  width: 60%;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.ca_form_button {
+  margin-top: 1rem;
+  height: 60px;
+  width: 60%;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  background: #fff; 
+  color: #000; 
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  padding: 1rem 3rem;
+  transition: 0.2s;
+}
+
+.ca_form_button:hover {
+  letter-spacing: 0.2rem;
+  padding: 1.1rem 3.1rem;
+  background: #000; 
+  color: #000;
+  animation: box 3s infinite;
+  cursor: pointer;
+}
+
+.ca_form_button::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #fff;
+}
+
+.ca_form_button span {
+  position: relative;
+  z-index: 1;
+}
+
+.ca_form_button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.ca_form_button i::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid #000; 
+  background: transparent;
+  transition: 0.2s;
+}
+
+.ca_form_button:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+
+.ca_form_button i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid #000; 
+  background: transparent;
+  transition: 0.2s;
+}
+
+.ca_form_button:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+
+
+
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes box {
+  0% {
+    box-shadow: #000;
+  }
+  50% {
+    box-shadow: 0 0 25px #000;
+  }
+  100% {
+    box-shadow: #000;
+  }
 }
