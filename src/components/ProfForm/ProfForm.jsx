@@ -110,7 +110,7 @@ const ProfForm = () => {
                 className="prof_input_form"
                 type="text"
                 placeholder="Ingrese apellidos"
-                value={nombre}
+                value={apellidos}
                 onChange={(e) => setApellidos(e.target.value)}
                 required
               />
@@ -123,7 +123,7 @@ const ProfForm = () => {
                 className="prof_input_form shared_input"
                 type="text"
                 placeholder="Ingrese el sexo"
-                value={nombre}
+                value={sexo}
                 onChange={(e) => setSexo(e.target.value)}
                 required
               />
@@ -134,7 +134,7 @@ const ProfForm = () => {
                 className="prof_input_form"
                 type="text"
                 placeholder="Ingrese el area"
-                value={nombre}
+                value={area}
                 onChange={(e) => setArea(e.target.value)}
                 required
               />

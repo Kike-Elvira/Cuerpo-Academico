@@ -181,3 +181,21 @@
     box-shadow: #000;
   }
 }
+
+
+@media only screen and (min-width: 1280px) and (max-width: 1366px) {
+  .ca_logo {
+    width: 18%;
+  }}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .ca_logo {
+    width: 18%;
+  }
+}
+
+/* Estilos para teléfonos celulares */
+@media only screen and (max-width: 767px) {
+  /* Tus estilos para teléfonos celulares aquí */
+}
