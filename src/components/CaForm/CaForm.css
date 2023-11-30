@@ -197,6 +197,9 @@
     margin-bottom: .3rem;
   }
 
+  .ca_input_error{
+    font-size: .8rem;
+  }
 
 
 }
