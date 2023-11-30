@@ -98,3 +98,23 @@
   .project_form_accept:hover{
     cursor: pointer;
   }
+
+
+  @media only screen and (min-width: 1280px) and (max-width: 1366px) {
+    .ca_logo {
+      width: 30%;
+    }
+    .ca_form_button{
+     height: 40px;
+    }
+    .ca_tag_form{
+      font-size: .8rem;
+    }
+    .ca_input_form{
+      font-size: .8rem;
+      margin-bottom: .5rem;
+    }
+  
+  
+  
+  }
