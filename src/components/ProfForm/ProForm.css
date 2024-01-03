@@ -45,6 +45,10 @@
   font-weight: 600;
 }
 
+.prof_error_message{
+  font-size: .8rem;
+}
+
 .prof_input_form {
   padding-top: 1rem;
   border: none;
@@ -195,13 +199,36 @@
 
 @media only screen and (min-width: 1280px) and (max-width: 1366px) {
   .prof_logo {
-    width: 18%;
-  }}
+    width: 20%;
+  }
+  .prof_form_button{
+   height: 40px;
+  }
+  .prof_tag_form{
+    font-size: .8rem;
+  }
+  .prof_input_form{
+    font-size: .8rem;
+    margin-bottom: .5rem;
+  }
+  .prof_error_message{
+    font-size: .8rem;
+  }
+
+
+
+}
 
 /* Estilos para tablets */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .prof_logo {
     width: 18%;
+  }
+  .prof_form_button{
+    height: 30px;
+  }
+  .prof_label_form{
+    font-size: .8rem;
   }
 }
 
