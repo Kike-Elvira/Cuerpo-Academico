@@ -1,0 +1,47 @@
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /* Ajusta el espaciado según tus necesidades */
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 10px; /* Ajusta el margen entre los logos según tus necesidades */
+  }
+  
+  .separator {
+    margin-right: 10px; /* Ajusta el margen entre los separadores según tus necesidades */
+  }
+  
+  .external-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text-decoration-none {
+    text-decoration: none;
+  }
+
+  .navbar{
+    display: flex;
+    width: 100%;
+    background-color: #17396A;
+    color : white;
+
+  }
+
+  .navbar_options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-family: Montserrat;
+    margin: 0.4rem;
+  }
