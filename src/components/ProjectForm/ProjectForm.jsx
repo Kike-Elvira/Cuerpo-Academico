@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./ProjectForm.css";
 import { confirmAlert } from "react-confirm-alert";
 import "react-confirm-alert/src/react-confirm-alert.css";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const ProjectForm = () => {
   const [tituloProyecto, setTituloProyecto] = useState("");
@@ -61,6 +63,8 @@ const ProjectForm = () => {
   };
 
   return (
+    <>
+    <Header></Header>
     <div className="project_form_container">
       <div className="project_form_titles_box">
         <h2 className="project_form_title">Proyectos</h2>
@@ -161,6 +165,8 @@ const ProjectForm = () => {
         </div>
       </div>
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 
