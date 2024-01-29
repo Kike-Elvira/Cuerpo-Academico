@@ -1,0 +1,105 @@
+.tes_form_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+  }
+  
+  .tes_form_titles_box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 15vh;
+  }
+  
+  .tes_form_title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  
+  .tes_form_subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .tes_form_box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 30vh;
+  }
+  
+  .tes_form_row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .tes_form_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 5rem;
+    width: 30%;
+    margin-right: 3%;
+  }
+  
+  .tes_form_placeholder {
+    color: #575454;
+  }
+  
+  .tes_form_row_buttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  
+  .tes_form_input {
+    width: 100%;
+    font-size: 1.3rem;
+    border: 1px solid #000000;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  }
+  
+  .tes_form_label{
+      font-size: 1.4rem;
+      font-weight: 600;
+  }
+  
+  .tes_form_cancel {
+      margin-right: 1rem;
+      background-color: transparent;
+      color: #6F7271;
+      text-align: center;
+      font-size: 1.5rem;
+      border: 1px solid #6F7271;
+      width: 10%;
+      border-radius: .3rem;
+      height: 3rem;
+    }
+  
+    .tes_form_accept {
+      margin-right: 1rem;
+      background-color: transparent;
+      color: #FF0F00;
+      text-align: center;
+      font-size: 1.5rem;
+      border: 1px solid #FF0F00;
+      width: 10%;
+      border-radius: .3rem;
+    }
+  
+    .tes_form_cancel:hover{
+      cursor: pointer;
+    }
+    .tes_form_accept:hover{
+      cursor: pointer;
+    }
+  
+  
+  
