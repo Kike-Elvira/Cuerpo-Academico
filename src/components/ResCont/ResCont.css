@@ -1,44 +1,47 @@
-.tes_form_container {
+
+
+
+.res_cont_container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
     font-family: "Montserrat", sans-serif;
     width: 100%;
   }
   
-  .tes_form_titles_box {
+  .res_cont_titles_box {
     display: flex;
     flex-direction: column;
     width: 80%;
     height: 15vh;
   }
   
-  .tes_form_title {
+  .res_cont_title {
     font-size: 3rem;
     font-weight: 600;
   }
   
-  .tes_form_subtitle {
+  .res_cont_subtitle {
     font-size: 1.5rem;
     font-weight: 600;
   }
   
-  .tes_form_box {
+  .res_cont_box {
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 30vh;
+    height: 50vh;
   }
   
-  .tes_form_row {
+  .res_cont_row {
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
     flex-wrap: wrap;
   }
   
-  .tes_form_col {
+  .res_cont_col {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -48,18 +51,20 @@
     margin-bottom: 1rem;
   }
   
-  .tes_form_placeholder {
+  .res_cont_placeholder {
     color: #575454;
   }
   
-  .tes_form_row_buttons {
+  .res_cont_row_buttons {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    flex-wrap: wrap;
+    margin-top: 1rem;
   }
   
   
-  .tes_form_input {
+  .res_cont_input {
     width: 100%;
     font-size: 1.3rem;
     border: 1px solid #000000;
@@ -67,12 +72,12 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   }
   
-  .tes_form_label{
+  .res_cont_label{
       font-size: 1.4rem;
       font-weight: 600;
   }
   
-  .tes_form_cancel {
+  .res_cont_cancel {
       margin-right: 1rem;
       background-color: transparent;
       color: #6F7271;
@@ -84,7 +89,7 @@
       height: 3rem;
     }
   
-    .tes_form_accept {
+    .res_cont_accept {
       margin-right: 1rem;
       background-color: transparent;
       color: #FF0F00;
@@ -95,28 +100,27 @@
       border-radius: .3rem;
     }
   
-    .tes_form_cancel:hover{
+    .res_cont_cancel:hover{
       cursor: pointer;
     }
-    .tes_form_accept:hover{
+    .res_cont_accept:hover{
       cursor: pointer;
     }
 
-    .error_message{
-      color: red;
-      font-size: 1rem;
-      font-weight: 600;
-      margin-top: 0rem;
-    }
-
-    .tes_input_error{
-      width: 100%;
-      font-size: 1.3rem;
-      border: 1px solid #000000;
-      background: #fff;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    .res_cont_table {
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        margin-top: 2rem;
+      }
       
-    }
-  
-  
-  
+      .res_cont_table tbody tr:nth-child(odd) {
+        background-color: #f2f2f2; /* Gris */
+      }
+      
+      .res_cont_table tbody tr:nth-child(even) {
+        background-color: #ffffff; /* Blanco */
+      }
+      
+      .res_cont_table_tr{
+          height: 5rem;
+      }

@@ -29,15 +29,15 @@ const ArtForm = () => {
       tituloArticulo.trim() === "" ||
       estadoActual.trim() === "" ||
       nombreRevista.trim() === "" ||
-      paginaInicio.trim() === "" ||
-      paginaFinal.trim() === "" ||
+      !Number.isInteger(parseInt(paginaInicio)) || // Verificar que paginaInicio sea un entero
+      !Number.isInteger(parseInt(paginaFinal)) || // Verificar que paginaFinal sea un entero
       descripcion.trim() === "" ||
       pais.trim() === "" ||
       editorial.trim() === "" ||
       volumen.trim() === "" ||
       issn.trim() === "" ||
       indiceRegistro.trim() === "" ||
-      fechaPublicacion.trim() === "" ||
+      isNaN(new Date(fechaPublicacion)) || // Verificar que fechaPublicacion sea una fecha válida
       direccionElectronica.trim() === "" ||
       proposito.trim() === ""
     ) {
@@ -114,9 +114,7 @@ const ArtForm = () => {
               />
             </div>
             <div className="art_form_col">
-              <label className="art_form_label">
-                Nombre de la Revista*
-              </label>
+              <label className="art_form_label">Nombre de la Revista*</label>
               <input
                 className="art_form_input"
                 type="text"
@@ -201,9 +199,7 @@ const ArtForm = () => {
           </div>
           <div className="art_form_row">
             <div className="art_form_col">
-              <label className="art_form_label">
-                Fecha de publicación*
-              </label>
+              <label className="art_form_label">Fecha de publicación*</label>
               <input
                 className="art_form_input"
                 type="date"

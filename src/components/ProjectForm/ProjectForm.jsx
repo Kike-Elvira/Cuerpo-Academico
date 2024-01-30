@@ -22,8 +22,8 @@ const ProjectForm = () => {
     if (
       tituloProyecto.trim() === "" ||
       nombrePatrocinador.trim() === "" ||
-      fechaInicio.trim() === "" ||
-      fechaFin.trim() === "" ||
+      isNaN(new Date(fechaInicio)) || // Verificar que fechaInicio sea una fecha válida
+      isNaN(new Date(fechaFin)) || // Verificar que fechaFin sea una fecha válida
       actividadesRealizadas.trim() === "" ||
       considerarCurriculum.trim() === ""
     ) {

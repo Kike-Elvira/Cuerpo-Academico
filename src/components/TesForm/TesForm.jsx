@@ -13,6 +13,7 @@ const TestForm = () => {
   const [correo, setCorreo] = useState("");
   const [nivel, setNivel] = useState("");
   const [carrera, setCarrera] = useState("");
+  const [correoError, setCorreoError] = useState("");
 
   const handleAccept = () => {
     // Validar que los campos obligatorios estén llenos
@@ -37,7 +38,10 @@ const TestForm = () => {
           },
         ],
       });
-    } else {
+    } 
+    else if (!validarCorreo(correo)) {
+      setCorreoError("Por favor, ingrese un correo válido");
+    }else {
       confirmAlert({
         title: "Confirmación",
         message: "¿Estás seguro de que deseas registrar?",
@@ -60,6 +64,10 @@ const TestForm = () => {
     }
   };
 
+  const validarCorreo = (correo) => {
+    const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regexCorreo.test(correo);
+  };
   return (
     <>
       <Header></Header>
@@ -109,11 +117,15 @@ const TestForm = () => {
             <div className="tes_form_col">
               <label className="tes_form_label">Correo*</label>
               <input
-                className="tes_form_input"
-                type="text"
+                className={`tes_form_input ${correoError ? "tes_input_error" : ""}`}
+                type="email"
                 value={correo}
-                onChange={(e) => setCorreo(e.target.value)}
+                onChange={(e) => {
+                setCorreo(e.target.value);
+                setCorreoError("");
+                }}
               />
+               {correoError && <p className="error_message">{correoError}</p>} {/* Muestra el error si correoError no está vacío */}
             </div>
             <div className="tes_form_col">
               <label className="tes_form_label">
